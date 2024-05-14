@@ -8,32 +8,122 @@
     tools:context=".MainGame">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tic-Tac-Toe! "
+        android:text="X's Turn! "
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.051" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.500">
+
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            style="@style/row"></LinearLayout>
-         
-          <Button
-              style="@style/column"
-        android:id="@+id/button1"
-        android:layout_width="224dp"
-        android:layout_height="59dp"
-        android:onClick="updateText"
-        android:text="TurnX"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="53dp" />
+
+            android:id="@+id/linearLayout"
+            style="@style/row"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.497">
+
+            <Button
+                android:id="@+id/a1"
+                style="@style/column" />
+
+            <Button
+                android:id="@+id/a2"
+                style="@style/column" />
+
+
+            <Button
+                android:id="@+id/a3"
+                style="@style/column" />
+
+            <LinearLayout style="@style/row">
+
+                <Button
+                    android:id="@+id/c1"
+                    style="@style/column" />
+
+                <View style="@style/verticalLine" />
+
+                <Button
+                    android:id="@+id/c2"
+                    style="@style/column" />
+
+                <View style="@style/verticalLine" />
+
+                <Button
+                    android:id="@+id/c3"
+                    style="@style/column" />
+
+            </LinearLayout>
+
+
+            <View style="@style/horizontalLine">
+
+            </View>
+
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine">
+
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/row"
+        android:layout_width="403dp"
+        android:layout_height="489dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497">
+
+        <Button
+            android:id="@+id/b1"
+            style="@style/column" />
+
+        <View style="@style/verticalLine" />
+
+        <Button
+            android:id="@+id/b2"
+            style="@style/column" />
+
+        <View style="@style/verticalLine" />
+
+        <Button
+            android:id="@+id/b3"
+            style="@style/column" />
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -9,6 +9,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 public class MainGame extends AppCompatActivity{
+    {
+        enum class Turn
+        {
+           NOUGHT,
+            CROSS
+        }
+    }
+
+    private var firstTurn = Turn.CROSS
+    private var currentTurn = Turn.CROSS
+
+            private lateinit var binding : ActivityMainBinding
 
     TextView textView;
 
