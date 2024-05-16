@@ -20,7 +20,7 @@
 
     <style name="verticalLine">
         <item name="android:background">@color/black</item>
-        <item name ="android:layout_width">5dp</item>
+        <item name ="android:layout_width">10dpdp</item>
         <item name ="android:layout_height">match_parent</item>
     </style>
 
